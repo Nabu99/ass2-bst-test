@@ -389,6 +389,26 @@ void test_samford01() {
     cout << "test_samford01 done!" << endl;
 }
 
+void test_Nabu99(){
+  cout << "Starting tests Nabu99: " << endl;
+  BST<int> tree1;
+  BST<int> tree2;
+
+  tree1.Add(1);
+  tree1.Add(3);
+  tree1.Add(2);
+  tree1.Add(10);
+  tree1.Add(7);
+  tree2.Add(2);
+  tree2.Add(5);
+  tree2.Add(4);
+
+  assert(tree1.IsEmpty == false);
+  assert(tree2.getHeight() == 2);
+  assert(tree1.NumberOfNodes() == 5);
+  cout << "End tests!!" << endl;
+}
+
 // Calling all test functions
 void testBSTAll() {
   test_pisan01();
@@ -402,4 +422,5 @@ void testBSTAll() {
   test_philip12();
   test_mcmelton();
   test_samford01();
+  test_Nabu99();
 }
